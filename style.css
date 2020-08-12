@@ -4,19 +4,34 @@ body {
     text-align: center;
 }
 
+/* Main Image */
 #img-div {
-    background: #b8860b;
+    background: #06070b;
     padding: 10px;
     margin: 0;
 }
 
-img {
+img.expand {
     align-items: center;
+    width: 70em; 
+    
 }
 
-/* Navigation Bar*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+figcaption {
+    font-family: 'Charmonman', cursive;
+    color: #5486b3;
+    font-size: 1rem;
+}
+
+    /* Navigation Bar*/
 .topnav {
-    background-color: #333;
+    background-color: #06070b;
     overflow: hidden;
   }
   
@@ -31,7 +46,7 @@ img {
   
   .topnav a:hover {
     background-color: #f0f8ff;
-    color: black;
+    color: #06070b;
   }
   
   .topnav a.active {
