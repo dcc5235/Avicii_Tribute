@@ -1,7 +1,9 @@
 body {
     margin: auto 0;
-    background-color: #b8860b;
+    background-color:  #06070b;
     text-align: center;
+    font-family: 'Red Rose', cursive;
+    color: #5486b3;
 }
 
 /* Main Image */
@@ -24,9 +26,9 @@ img {
 }
 
 figcaption {
-    font-family: 'Charmonman', cursive;
+    font-family: 'Red Rose', cursive;
     color: #5486b3;
-    font-size: 1rem;
+    padding: 0 30em;
 }
 
     /* Navigation Bar*/
@@ -53,3 +55,15 @@ figcaption {
     background-color: #5486b3;
     color: white;
   }
+
+#tribute-info {
+    background: #06070b;
+    padding: 10px;
+    margin: 0;
+}
+
+p {
+    font-family: 'Red Rose', cursive;
+    color: #5486b3;
+    padding: 0 10em;
+}
