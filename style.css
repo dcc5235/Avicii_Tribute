@@ -20,9 +20,12 @@ img.expand {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
     display: block;
+    width: 100%;
+}
+
+.img-container {
+    max-width: 100%;
 }
 
 figcaption {
@@ -32,13 +35,13 @@ figcaption {
 }
 
     /* Navigation Bar*/
-.topnav {
+.nav {
     background-color: #06070b;
     overflow: hidden;
+    display: flex;
   }
   
-  .topnav a {
-    float: left;
+  .nav a {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -46,12 +49,12 @@ figcaption {
     font-size: 17px;
   }
   
-  .topnav a:hover {
+  .nav a:hover {
     background-color: #f0f8ff;
     color: #06070b;
   }
   
-  .topnav a.active {
+  .nav a.active {
     background-color: #5486b3;
     color: white;
   }
