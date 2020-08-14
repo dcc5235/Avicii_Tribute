@@ -1,3 +1,7 @@
+/* ===========================================================
+General Style
+=========================================================== */
+
 body {
     margin: auto 0;
     background-color:  #06070b;
@@ -10,27 +14,59 @@ body {
     text-align: center;
     color: #f0f8ff;
 }
-/* Main Image */
+
+/* ===========================================================
+Font Color
+=========================================================== */
+
+figcaption,
+li,
+a,
+p {
+    color: #5486b3
+}
+
+/* ===========================================================
+Main Image & Caption
+=========================================================== */
+
+.img-container {
+    max-width: 100%;
+}
 
 img {
     display: block;
     width: 100%;
 }
 
-.img-container {
-    max-width: 100%;
-}
-
 figcaption {
     font-family: 'Red Rose', cursive;
-    color: #5486b3;
+
     text-align: center;
 }
 
-    /* Navigation Bar*/
-li, a {
+/* ===========================================================
+Navigation Bar
+=========================================================== */
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all .3s ease 0s;
+}
+  
+.nav_links li a:hover {
+    background-color: #f0f8ff;
+    color: #06070b;
+  }li, a {
     font-family: 'Red Rose', cursive;
-    color: #5486b3;
     font-size: 15px;
 }
 
@@ -41,35 +77,9 @@ header {
     padding: 30px 10%;
 }
 
-.nav_links {
-    list-style: none;
-}
-
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li a {
-    transition: all .3s ease 0s;
-}
-  
-  .nav_links li a:hover {
-    background-color: #f0f8ff;
-    color: #06070b;
-  }
-
-#tribute-info {
-    background: #06070b;
-    padding: 10px;
-    margin: 0;
-}
-
-p {
-    font-family: 'Red Rose', cursive;
-    color: #5486b3;
-    padding: 0 10em;
-}
+/* ===========================================================
+Main Text
+=========================================================== */
 
 .container {
     position: relative;
@@ -82,4 +92,15 @@ p {
     top: 75%;
     left: 50%;
     margin: 25em 0 0 -25px;
+}
+
+p {
+    font-family: 'Red Rose', cursive;
+    padding: 0 10em;
+}
+
+#tribute-info {
+    background: #06070b;
+    padding: 10px;
+    margin: 0;
 }
