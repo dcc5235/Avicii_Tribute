@@ -6,18 +6,11 @@ body {
     color: #5486b3;
 }
 
+#main {
+    text-align: center;
+    color: #f0f8ff;
+}
 /* Main Image */
-#img-div {
-    background: #06070b;
-    padding: 10px;
-    margin: 0;
-}
-
-img.expand {
-    align-items: center;
-    width: 70em; 
-    
-}
 
 img {
     display: block;
@@ -31,32 +24,39 @@ img {
 figcaption {
     font-family: 'Red Rose', cursive;
     color: #5486b3;
-    padding: 0 30em;
+    text-align: center;
 }
 
     /* Navigation Bar*/
-.nav {
-    background-color: #06070b;
-    overflow: hidden;
+li, a {
+    font-family: 'Red Rose', cursive;
+    color: #5486b3;
+    font-size: 15px;
+}
+
+header {
     display: flex;
-  }
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all .3s ease 0s;
+}
   
-  .nav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .nav a:hover {
+  .nav_links li a:hover {
     background-color: #f0f8ff;
     color: #06070b;
-  }
-  
-  .nav a.active {
-    background-color: #5486b3;
-    color: white;
   }
 
 #tribute-info {
@@ -75,7 +75,7 @@ p {
     position: relative;
 }
 
-.tribute-date {
+.tribute-data {
     width: 50px;
     height: 50px;
     position: absolute;
