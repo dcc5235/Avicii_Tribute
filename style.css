@@ -4,14 +4,17 @@ General Style
 
 html,
 body {
-    margin: auto 0;
-    background-color:  #fff;
-    font-family: 'Red Rose', cursive;
+  margin: auto 0;
+  background-color: #fff;
+  font-family: "Red Rose", cursive;
 }
 
 #main {
-    text-align: left;
-    color: #6f8fa3;
+  color: #6f8fa3;
+}
+
+img {
+  width: 100%;
 }
 
 /* ===========================================================
@@ -19,62 +22,63 @@ Navigation Bar
 =========================================================== */
 
 .logo {
-    height: 52px;
-    width: 100px;
-    overflow: hidden;
-    position: absolute;
+  height: 52px;
+  width: 100px;
+  overflow: hidden;
+  position: absolute;
 }
 
 .nav_links {
-    list-style: none;
+  list-style: none;
 }
 
 .nav_links li {
-    padding: 0px 20px;
+  padding: 0px 20px;
 }
 
 .nav_links li a {
-    transition: all .3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
-  
-.nav_links li a:hover {
-    background-color: #113852;
-    color: #6f8fa3;
-  }
 
-li, a {
-    font-size: 15px;
-    color: #032236;
+.nav_links li a:hover {
+  background-color: #113852;
+  color: #6f8fa3;
+}
+
+li,
+a {
+  font-size: 15px;
+  color: #032236;
 }
 
 nav {
-    width: 100%;
-    height: 50px;
-    background: rgba(225, 225, 225, .8);
-    border-top: 1px solid rgba(225, 225, 225, .2);
-    border-bottom: 1px solid rgba(225, 225, 225, .2);
+  width: 100%;
+  height: 50px;
+  background: rgba(225, 225, 225, 0.8);
+  border-top: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
 }
 
 nav ul li a {
-    display: block;
-    color: #000;
-    padding: 0 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 2rem;
+  display: block;
+  color: #000;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2rem;
 }
- 
+
 header {
-    padding: 10px 100px;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
 }
 
 /* ===========================================================
@@ -82,33 +86,35 @@ Main Image & Caption
 =========================================================== */
 
 #title {
-    width: 100%;
-    font-size: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute;
-    top: 55rem;
-    right: 0;
-    text-transform: uppercase;
+  width: 100%;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: absolute;
+  top: 55rem;
+  right: 0;
+  text-transform: uppercase;
 }
 
-#img-div, 
+#img-div,
 #image {
-    width: 100%;
-    background-color: #0b0b0b;
+  width: 100%;
+  background-color: #0b0b0b;
 }
 
 #img-caption {
-    text-align: center;
-    color: #fff;
-    font-family: cursive;
+  text-align: center;
+  color: #fff;
+  font-family: cursive;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
-@media img-div {
+@media (min-width: 768px) {
+  img-div {
     max-width: 100%;
+  }
 }
 
 /* ===========================================================
@@ -116,32 +122,36 @@ Main Text
 =========================================================== */
 
 #tribute-info {
-    background: #fff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .begin {
-    color: #000;
-    font-weight: 900;
-    font-size: 3rem;
-    margin-bottom: 0;
+  color: #000;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
 .life,
 ul {
-    columns: 3 250px;
-    margin-top: 0;
-    column-rule: 1px dotted #113852;
-    column-gap: 3rem;
+  columns: 3 250px;
+  margin-top: 0;
+  column-rule: 1px dotted #113852;
+  column-gap: 3rem;
+}
+
+.life > ul li:not(:first-child) {
+  padding-top: 10px;
 }
 
 .intro {
-    column-span: all;
+  column-span: all;
 }
 
 section {
-    padding: 0 6rem;
-    color: #000;
+  padding: 0 6rem;
+  color: #000;
 }
 
 /* ===========================================================
@@ -149,23 +159,23 @@ Artistry Images
 =========================================================== */
 
 .album-img {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .artistry-img {
-    width: 350px;
-    height: 200px;
-    margin: 5px;
-    transition: all 1s;
+  width: 350px;
+  height: 200px;
+  margin: 5px;
+  transition: all 1s;
 }
 
 .artistry-img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* ===========================================================
@@ -173,35 +183,35 @@ End Text
 =========================================================== */
 
 .end {
-    column-span: all;
-    margin-top: 1rem;
+  column-span: all;
+  margin-top: 1rem;
 }
 
 .family {
-    line-height: 1.5rem;
-    margin-top: 32px;
-    margin-left: 32px;
-    margin-right: 96px;
+  line-height: 1.5rem;
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 96px;
 }
 
 .family-style {
-    text-align: end;
-    margin-right: 96px;
+  text-align: end;
+  margin-right: 96px;
 }
 
 .end-bg {
-    width: 100%;
-    background-color: #0b0b0b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  width: 100%;
+  background-color: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .end-vid {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
 }
 
 /* ===========================================================
@@ -209,54 +219,58 @@ Footer
 =========================================================== */
 
 #tribute-link {
-    text-align: center;
-    background-color: #0b0b0b;
-    color: #6f8fa3;
-    font-family: cursive;
-    width: 100vw;
-    overflow: hidden;
-    padding: 30px 0;
+  text-align: center;
+  background-color: #0b0b0b;
+  color: #6f8fa3;
+  font-family: cursive;
+  width: 100vw;
+  overflow: hidden;
+  padding: 30px 0;
 }
 
 .official-site:hover {
-    background-color: #113852;
-    color: #6f8fa3;
+  background-color: #113852;
+  color: #6f8fa3;
 }
 
 .footer-note {
-    position: relative;
-    left: 50px;
-    right: 50px;
-    width: 40%;
-    color: #fff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: left;
-    padding: 0 50px;
+  position: relative;
+  left: 50px;
+  right: 50px;
+  width: 40%;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: left;
+  padding: 0 50px;
 }
 
 .footer-note2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #fff;
-    position: absolute;
-    right: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #fff;
+  position: absolute;
+  right: 100px;
+}
+
+.media-icons {
+  list-style-type: none;
 }
 
 .media-icons,
 .footer-content-pos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 20px;
-    align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+  align-items: flex-end;
 }
 
 i {
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-    height: 30px;
-    left: 190px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  height: 30px;
+  left: 190px;
 }
