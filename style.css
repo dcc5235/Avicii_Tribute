@@ -58,7 +58,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: flex-end;
-    margin: 15px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -167,3 +167,27 @@ Artistry Images
 .img1:hover {
     transform: scale(1.1);
 }
+
+/* ===========================================================
+End Text
+=========================================================== */
+
+.end {
+    column-span: all;
+    margin-top: 1rem;
+}
+
+.family {
+    line-height: 1.5rem;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 96px;
+}
+
+.family-style {
+    text-align: end;
+    margin-right: 96px;
+}
+/* ===========================================================
+Footer
+=========================================================== */
