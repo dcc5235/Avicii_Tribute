@@ -14,10 +14,10 @@
       <img class="logo" src="images/aviciilogo.png" alt="logo">
       <nav class="active">
         <ul class="nav_links">
-          <li><a href="#">Official Page</a></li>
-          <li><a href="#">Life</a></li>
-          <li><a href="#">Artistry</a></li>
-          <li><a href="#">Death</a></li>
+          <li><a href="https://avicii.com/" target="_blank">Official Page</a></li>
+          <li><a href="#early life">Life & Career</a></li>
+          <li><a href="#artistry">Artistry</a></li>
+          <li><a href="#passing">Passing</a></li>
         </ul>
       </nav>
       </div>
@@ -40,7 +40,7 @@
     </div>
     <!-- User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page. -->
     <section id="tribute-info">
-      <p class="begin">Early Life & Career</p>
+      <p class="begin" id="early life">Early Life & Career</p>
       <div class="life">  
         <p class="intro">Tim Bergling was born in Stockholm on 8 September 1989, the son of Klas Bergling and actress 
         Anki Lidén. He started mixing in his bedroom at the age of eight. Inspired by his brother, who 
@@ -88,19 +88,19 @@
         to release his third studio album in 2017.
         </ul>
       </div>
-      <p class="begin">Artistry</p>
+      <p class="begin" id="artistry">Artistry</p>
       <div class="album-img">
-        <img class="img1" src="Images/albumcover3.jpg" alt="party goers at avicii's concert dance">
-        <img class="img1" src="images/albumcover1.jpg" alt="two hands embracing">
-        <img class="img1" src="images/albumcover2.jpg" alt="two lovers imbrace while creating art">
-        <img class="img1" src="Images/album4.jpg" alt="lonely together album cover">
-        <img class="img1" src="images/waitingforlove.png" alt="broken arrows album cover">
-        <img class="img1" src="images/happiness.png" alt="avicii's last concert">
-        <img class="img1" src="images/brokenarrows.jpg" alt="broken arrows album cover">
-        <img class="img1" src="Images/scars.jpg" alt="quote from album">
-        <img class="img1" src="images/stories.jpg" alt="stories album cover">
+        <img class="artistry-img" src="Images/albumcover3.jpg" alt="party goers at avicii's concert dance">
+        <img class="artistry-img" src="images/albumcover1.jpg" alt="two hands embracing">
+        <img class="artistry-img" src="images/albumcover2.jpg" alt="two lovers imbrace while creating art">
+        <img class="artistry-img" src="Images/album4.jpg" alt="lonely together album cover">
+        <img class="artistry-img" src="images/waitingforlove.png" alt="broken arrows album cover">
+        <img class="artistry-img" src="images/happiness.png" alt="avicii's last concert">
+        <img class="artistry-img" src="images/brokenarrows.jpg" alt="broken arrows album cover">
+        <img class="artistry-img" src="Images/scars.jpg" alt="quote from album">
+        <img class="artistry-img" src="images/stories.jpg" alt="stories album cover">
       </div>
-      <p class="begin">Passing</p>
+      <p class="begin" id="passing">Passing</p>
       <div class="end">
         Bergling died on 20 April 2018 near Muscat at the age of 28. On 26 April, his family released an open 
         letter stating:
@@ -113,21 +113,15 @@
         sadly missed. The person you were and your music will keep your memory alive. We love you." </em>
         <p class="family-style">-The Family</p></p>
       </div>
-      </section>
-
-
-
-
-
+    </section>
+    <div class="end-bg">
+      <video class="end-vid" src="Videos/concert.mp4" controls autoplay></video>
+    </div>
 <!-- User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank"). -->
-      <footer>
-      <div>
-        <h4>
-          You can contribute to a memorial wall at <a id="tribute-link"
-            href="https://avicii.com/" target="_blank">Avicii's Official
-            Site</a>.
-        </h4>
-      </div></footer>
+      <footer id="tribute-link">
+          You can make contributions to a memorial wall at <a id="tribute-link" href="https://avicii.com/" target="_blank">
+            <p class="official-site">Avicii's Official Site</p></a>
+      </footer>
     </main>
   </body>
 </html>

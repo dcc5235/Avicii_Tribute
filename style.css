@@ -157,14 +157,14 @@ Artistry Images
     padding: 0;
 }
 
-.img1 {
+.artistry-img {
     width: 350px;
     height: 200px;
     margin: 5px;
     transition: all 1s;
 }
 
-.img1:hover {
+.artistry-img:hover {
     transform: scale(1.1);
 }
 
@@ -188,6 +188,42 @@ End Text
     text-align: end;
     margin-right: 96px;
 }
+
+.end-bg {
+    width: 100%;
+    background-color: #0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.end-vid {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+
 /* ===========================================================
 Footer
 =========================================================== */
+
+#tribute-link {
+    text-align: center;
+    background-color: #0b0b0b;
+    color: #6f8fa3;
+    font-family: cursive;
+}
+
+.official-site {
+    display: block;
+    color: #ffffff;
+    padding: 0 20px;
+    line-height: 2rem;
+    margin: 0 600px;
+}
+
+.official-site:hover {
+    background-color: #113852;
+    color: #6f8fa3;
+}
