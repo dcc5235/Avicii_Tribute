@@ -11,8 +11,8 @@ body {
 }
 
 #main {
-    text-align: center;
-    color: #f0f8ff;
+    text-align: left;
+    color: #6f8fa3;
 }
 
 /* ===========================================================
@@ -20,10 +20,10 @@ Navigation Bar
 =========================================================== */
 
 .logo {
-    cursor: pointer;
-    height: 50px;
+    height: 52px;
     width: 100px;
     overflow: hidden;
+    position: absolute;
 }
 
 .nav_links {
@@ -31,7 +31,6 @@ Navigation Bar
 }
 
 .nav_links li {
-    display: inline-block;
     padding: 0px 20px;
 }
 
@@ -73,9 +72,6 @@ nav ul li a {
 }
  
 header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     padding: 10px 100px;
     box-sizing: border-box;
     position: sticky;
@@ -86,6 +82,29 @@ header {
 Main Image & Caption
 =========================================================== */
 
+#title {
+    width: 100%;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 55rem;
+    right: 0;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .img-container {
     max-width: 100%;
 }
@@ -93,6 +112,7 @@ Main Image & Caption
 img {
     display: block;
     width: 100%;
+
 }
 
 /* ===========================================================
