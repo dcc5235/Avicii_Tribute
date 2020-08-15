@@ -116,11 +116,41 @@ Main Text
 
 #tribute-info {
     background: #fff;
-
-
-    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-    
+
+.begin {
+    color: #000;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.life,
+ul {
+    columns: 3 250px;
+    margin-top: 0;
+    column-rule: 1px dotted #113852;
+    column-gap: 3rem;
+}
+
+.intro {
+    column-span: all;
+}
+
+section {
+    padding: 0 6rem;
+    color: #000;
+}
+
+/* ===========================================================
+Artistry Images
+=========================================================== */
+
+
+
+
+
 
 .album-img {
     display: flex;
