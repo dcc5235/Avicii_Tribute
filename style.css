@@ -2,12 +2,12 @@
 General Style
 =========================================================== */
 
+html,
 body {
     margin: auto 0;
-    background-color:  #06070b;
+    background-color:  #fff;
     text-align: center;
     font-family: 'Red Rose', cursive;
-    color: #5486b3;
 }
 
 #main {
@@ -16,38 +16,15 @@ body {
 }
 
 /* ===========================================================
-Font Color
-=========================================================== */
-
-figcaption,
-li,
-a,
-p {
-    color: #5486b3
-}
-
-/* ===========================================================
-Main Image & Caption
-=========================================================== */
-
-.img-container {
-    max-width: 100%;
-}
-
-img {
-    display: block;
-    width: 100%;
-}
-
-figcaption {
-    font-family: 'Red Rose', cursive;
-
-    text-align: center;
-}
-
-/* ===========================================================
 Navigation Bar
 =========================================================== */
+
+.logo {
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    overflow: hidden;
+}
 
 .nav_links {
     list-style: none;
@@ -63,18 +40,59 @@ Navigation Bar
 }
   
 .nav_links li a:hover {
-    background-color: #f0f8ff;
-    color: #06070b;
-  }li, a {
-    font-family: 'Red Rose', cursive;
+    background-color: #113852;
+    color: #6f8fa3;
+  }
+
+li, a {
     font-size: 15px;
+    color: #032236;
 }
 
+nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(225, 225, 225, .8);
+    border-top: 1px solid rgba(225, 225, 225, .2);
+    border-bottom: 1px solid rgba(225, 225, 225, .2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+}
+
+nav ul li a {
+    display: block;
+    color: #113852;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 2rem;
+}
+ 
 header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+/* ===========================================================
+Main Image & Caption
+=========================================================== */
+
+.img-container {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    width: 100%;
 }
 
 /* ===========================================================
@@ -88,14 +106,11 @@ Main Text
 .tribute-data {
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: 75%;
     left: 50%;
     margin: 25em 0 0 -25px;
 }
 
 p {
-    font-family: 'Red Rose', cursive;
     padding: 0 10em;
 }
 
@@ -104,3 +119,4 @@ p {
     padding: 10px;
     margin: 0;
 }
+
