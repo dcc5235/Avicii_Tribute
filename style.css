@@ -2,7 +2,6 @@
 General Style
 =========================================================== */
 
-html,
 body {
   margin: auto 0;
   background-color: #fff;
@@ -62,7 +61,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 nav ul li a {
@@ -77,28 +76,37 @@ nav ul li a {
 header {
   padding: 10px 100px;
   box-sizing: border-box;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
 }
 
 /* ===========================================================
 Main Image & Caption
 =========================================================== */
-
-#title {
-  width: 100%;
-  font-size: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  position: absolute;
-  top: 55rem;
-  right: 0;
-  text-transform: uppercase;
+.img-caption-container {
+  position: relative;
+  background-color: #000;
+  padding-bottom: 5px;
 }
 
-#img-div,
+#title {
+  background: #fff;
+  opacity: 15%;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  color: #113852;
+}
+
+#title p {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 #image {
   width: 100%;
-  background-color: #0b0b0b;
 }
 
 #img-caption {
@@ -107,8 +115,9 @@ Main Image & Caption
   font-family: cursive;
 }
 
-img {
+#img-div {
   display: block;
+  background-color: #000;
 }
 
 @media (min-width: 768px) {
@@ -124,6 +133,7 @@ Main Text
 #tribute-info {
   background: #fff;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 0 6rem;
 }
 
 .begin {
@@ -150,7 +160,6 @@ ul {
 }
 
 section {
-  padding: 0 6rem;
   color: #000;
 }
 
