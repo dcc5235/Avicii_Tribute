@@ -6,25 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tim Bergling</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet"> -->
   <script src="https://kit.fontawesome.com/539a3afe41.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Navigation bar!!!!!!!!! -->
-  <header>
-    <div class="logo">
-      <img class="nav.logo" src="images/aviciilogo.png" alt="logo">
-    </div>
-    <nav class="active">
-      <ul class="nav_links">
-        <li><a href="https://avicii.com/" target="_blank">Official Page</a></li>
-        <li><a href="#early life">Life & Career</a></li>
-        <li><a href="#artistry">Artistry</a></li>
-        <li><a href="#passing">Passing</a></li>
-      </ul>
-    </nav>
-    </div>
+  <div class="grid">
+    <header>
+      <div class="logo">
+        <img src="images/aviciilogo.png" alt="logo">
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="https://avicii.com/" target="_blank">Official Page</a></li>
+          <li><a href="#early life">Life & Career</a></li>
+          <li><a href="#artistry">Artistry</a></li>
+          <li><a href="#passing">Passing</a></li>
+        </ul>
+      </nav>
+  </div>
   </header>
   <!-- User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements. -->
   <main id="main">
@@ -131,29 +132,34 @@
       <video class="end-vid" src="Videos/concert.mp4" controls autoplay></video>
     </section>
     <!-- User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank"). -->
-    <footer id="tribute-link" class="footer-content-pos">
-      <p class="footer-note">This site is a fan tribute page in honor of Avicii. Portions of content information from
-        this
-        site can be linked back to Wikipedia, Avicii's offical facebook page, Avicii's Youtube page, and Avicii's
-        official site. The purpose of this site
-        is solely to remember Avicii for the great work he created for the world.</p>
-      <div class="social-menu">
-        <ul class="media-icons">
-          <li>><a href="https://www.facebook.com/avicii/?ref=page_internal" target="_blank"><i
-                class="fab fa-facebook"></i></a></li>
-          <li><a href="htttps://en.wikipedia.org/wiki/Avicii" target="_blank"><i class="fab fa-wikipedia-w"></i></a>
-          </li>
-          <li><a href="https://www.instagram.com/avicii/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li><a href="https://www.youtube.com/channel/UCPHjpfnnGklkRBBTd0k6aHg" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p class="footer-note2">You can make contributions to a memorial wall at <a id="tribute-link"
-          href="https://avicii.com/" target="_blank">
-          Avicii's Official Site</a>.</p>
+    <footer>
+      <section class="bottom">
+        <div class="footer-note">
+          <p>This site is a fan tribute page in honor of Avicii. Portions of content information from
+            this
+            site can be linked back to Wikipedia, Avicii's offical facebook page, Avicii's Youtube page, and Avicii's
+            official site. The purpose of this site
+            is solely to remember Avicii for the great work he created for the world.</p>
+        </div>
+        <div class="social-menu">
+          <p>You can make contributions to a memorial wall at <a class="avicii-site" href="https://avicii.com/"
+              target="_blank">
+              Avicii's Official Site</a>.</p>
+          <p>Learn more about Avicii below:</p>
+          <ul>
+            <li><a href="https://www.facebook.com/avicii/?ref=page_internal" target="_blank"><i
+                  class="fab fa-facebook"></i></a></li>
+            <li><a href="htttps://en.wikipedia.org/wiki/Avicii" target="_blank"><i class="fab fa-wikipedia-w"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/avicii/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/channel/UCPHjpfnnGklkRBBTd0k6aHg" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </footer>
   </main>
 </body>

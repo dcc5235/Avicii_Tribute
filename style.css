@@ -2,14 +2,14 @@
 General Style
 =========================================================== */
 
-body {
-  margin: auto 0;
-  background-color: #fff;
-  font-family: "Red Rose", cursive;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-#main {
-  color: #6f8fa3;
+body {
+  margin: auto 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 img {
@@ -21,10 +21,10 @@ Navigation Bar
 =========================================================== */
 
 .logo {
+  position: absolute;
   height: 52px;
   width: 100px;
   overflow: hidden;
-  position: absolute;
 }
 
 .nav_links {
@@ -76,24 +76,18 @@ nav ul li a {
 header {
   padding: 10px 100px;
   box-sizing: border-box;
-  /* position: sticky; */
   top: 0;
 }
 
 /* ===========================================================
 Main Image & Caption
 =========================================================== */
-.img-caption-container {
-  position: relative;
-  background-color: #000;
-  padding-bottom: 5px;
-}
 
 #title {
   background: #fff;
   opacity: 15%;
-  width: 100%;
   position: absolute;
+  width: 100%;
   bottom: 10%;
   color: #113852;
 }
@@ -115,15 +109,10 @@ Main Image & Caption
   font-family: cursive;
 }
 
-#img-div {
-  display: block;
+.img-caption-container {
+  position: relative;
   background-color: #000;
-}
-
-@media (min-width: 768px) {
-  img-div {
-    max-width: 100%;
-  }
+  padding-bottom: 5px;
 }
 
 /* ===========================================================
@@ -143,8 +132,7 @@ Main Text
   margin-bottom: 0;
 }
 
-.life,
-ul {
+.life {
   columns: 3 250px;
   margin-top: 0;
   column-rule: 1px dotted #113852;
@@ -227,59 +215,51 @@ End Text
 Footer
 =========================================================== */
 
-#tribute-link {
-  text-align: center;
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: #0b0b0b;
-  color: #6f8fa3;
-  font-family: cursive;
-  width: 100vw;
-  overflow: hidden;
-  padding: 30px 0;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-bottom: 10px;
 }
 
-.official-site:hover {
+.avicii-site {
+  color: #fff;
+}
+
+.avicii-site:hover {
   background-color: #113852;
   color: #6f8fa3;
 }
 
 .footer-note {
-  position: relative;
-  left: 50px;
-  right: 50px;
-  width: 40%;
-  color: #fff;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
   padding: 0 50px;
 }
 
-.footer-note2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: #fff;
-  position: absolute;
-  right: 100px;
-}
-
-.media-icons {
+.social-menu ul {
   list-style-type: none;
-}
-
-.media-icons,
-.footer-content-pos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 20px;
-  align-items: flex-end;
+  color: #fff;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 0;
 }
 
 i {
   color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  position: relative;
-  height: 30px;
-  left: 190px;
+  display: block;
+  float: left;
+  padding: 0 50px 0 0;
+}
+
+/* ===========================================================
+Media Queries
+=========================================================== */
+
+@media (min-width: 768px) {
+  img-div {
+    max-width: 100%;
+  }
 }
