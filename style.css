@@ -318,10 +318,13 @@ Media Query
     grid-column-end: 2;
   }
 
+  .end-vid {
+    height: 20rem;
+  }
+
   header {
     padding: 0.25rem;
     text-align: center;
-    height: 12.5rem;
   }
 
   nav {
@@ -336,7 +339,7 @@ Media Query
   }
 
   nav ul li a {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     text-decoration: none;
   }
 
