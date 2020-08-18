@@ -364,7 +364,7 @@ Media Query
   }
 }
 
-@media (min-width: 681px) {
+@media (min-width: 330px) and (max-width: 681px) {
   #tribute-info {
     padding: 0 1.5rem;
   }
