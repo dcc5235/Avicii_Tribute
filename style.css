@@ -32,7 +32,7 @@ Navigation Bar
 }
 
 .nav_links li {
-  padding: 0px 20px;
+  padding-left: 0;
 }
 
 .nav_links li a {
@@ -139,9 +139,9 @@ Main Text
   column-gap: 3rem;
 }
 
-.life > ul li:not(:first-child) {
+/* .life > ul li:not(:first-child) {
   padding-top: 10px;
-}
+} */
 
 .intro {
   column-span: all;
@@ -255,11 +255,78 @@ i {
 }
 
 /* ===========================================================
-Media Queries
+Media Query
 =========================================================== */
 
-@media (min-width: 768px) {
-  img-div {
+@media (min-width: 330px) and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
     max-width: 100%;
+  }
+
+  #tribute-info {
+    text-align: center;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #img-div {
+    max-width: 100%;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+  .img-caption-container {
+    font-size: 0.5rem;
+  }
+
+  .life ul {
+    columns: 0 250px;
+    column-span: all;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .family {
+    text-align: center;
+    margin-right: 32px;
+  }
+
+  .begin,
+  .passing,
+  .early life {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .album-img {
+    padding-bottom: 2rem;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-menu ul {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+  i {
+    display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  hr {
+    display: none;
   }
 }
