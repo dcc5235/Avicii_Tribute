@@ -7,6 +7,10 @@ General Style
   grid-template-columns: 1fr;
 }
 
+main {
+  margin-top: 1rem;
+}
+
 body {
   margin: auto 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -139,9 +143,9 @@ Main Text
   column-gap: 3rem;
 }
 
-/* .life > ul li:not(:first-child) {
+.life > ul li:not(:first-child) {
   padding-top: 10px;
-} */
+}
 
 .intro {
   column-span: all;
@@ -151,9 +155,17 @@ section {
   color: #000;
 }
 
+ul {
+  margin-top: 0;
+}
+
 /* ===========================================================
 Artistry Images
 =========================================================== */
+
+#artistry {
+  margin-bottom: 16px;
+}
 
 .album-img {
   display: flex;
@@ -322,24 +334,33 @@ Media Query
     height: 20rem;
   }
 
+  main {
+    margin-top: 1rem;
+  }
+
   header {
     padding: 0.25rem;
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
     text-align: center;
   }
 
   nav {
     font-size: 1rem;
     padding: 0;
+    margin-bottom: 7.5rem;
   }
 
   nav ul {
-    margin: 0;
-    padding: 0.01rem;
+    /* padding: 0.01rem; */
     flex-direction: column;
   }
 
   nav ul li a {
-    padding: 0.5rem 0.5rem;
+    /* padding: 0.5rem 0.5rem; */
     text-decoration: none;
   }
 
@@ -358,6 +379,7 @@ Media Query
 
   i {
     padding: 0 1.5rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -370,5 +392,17 @@ Media Query
 @media (min-width: 330px) and (max-width: 681px) {
   #tribute-info {
     padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  header,
+  main,
+  footer {
+    margin: 0 auto;
+  }
+  header,
+  main {
+    padding: 0 50px;
   }
 }
