@@ -1,5 +1,6 @@
 # Avicii Tribute Page ![GitHub version doc](https://img.shields.io/badge/Version-1.0.0-red) ![GitHub last commit](https://img.shields.io/github/last-commit/dcc5235/tribute_page?style=flat-square) 
 
+### Checkout the Live Version of the Project!
 
 **HTML5, CSS3**
 
